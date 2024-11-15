@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tanpa Database</title>
+    <style>
+
+        body{
+            background-color: green;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        form{
+            background-color: greenyellow;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0,0.5);
+        }
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: px solid black;
+            border-radius: 2px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        } 
+        button{
+            background-color: white;
+            border: 1 px solid #42f56f;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 15px;
+            display: block;
+            width: 100px;
+            margin-top: auto;
+            margin-bottom: auto;  
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-control">
+        <form id="form">
+
+    <img src="Logo rumah sakit.png" width="115px" height="120px">
+    <img  align="right" src="Logo rumah sakit.png" width="115px" height="120px">
+    <table >
+
+    <h1 align="center">Form Rekam Medis</h1>
+   
+
+    <div class="form-control">
+        <label for="NamaPasien" id="label-NamaPasien">Nama Lengkap</label>
+        <input type="text" id="NamaPasien" placeholder="Masukan Nama Anda...">
+    </div>
+
+    <div class="form-control">
+        <label for="umur" id="label-umur">Umur</label>
+        <input type="text" id="umur" placeholder="Masukan Umur Anda...">
+    </div>
+
+    <div class="form-control">
+        <label for="NoTelepon" id="label-NoTelepon">No Telepon</label>
+        <input type="text" id="NoTelepon" placeholder="(+62) 000-000">
+    </div>
+
+    <div class="form-control">
+        <label for="Alamat" id="label-Alamat">Alamat</label>
+        <input type="text" id="label-Alamat" placeholder="Masukan Alamat Anda...">
+    </div>
+
+    <div class="form-control">
+        <label>Pilih Kondisi yang berlaku pada anda atau keluarga terdekat anda?</label>
+
+        <label for="kondisi">
+            <input type="checkbox" id="kondisi-1"
+             name="kondisi">Asma</label>
+
+        <label for="kondisi">
+            <input type="checkbox" id="kondisi-2"
+            name="kondisi">Kanker
+        </label>
+
+        <label for="kondisi">
+            <input type="checkbox" id="kondisi-3"
+            name="kondisi">Penyakit jantung
+        </label>
+
+        <label for="kondisi">
+            <input type="checkbox" id="kondisi-4"
+            name="kondisi">Diabetes
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>Pilih gejala yang anda alami saat ini</label>
+
+        <label for="kondisi">
+            <input type="checkbox" id="kondisi-1"
+            name="kondisi">Diabetes
+        </label>
+
+        <label for="kondisi">
+            <input type="checkbox" id="kondisi-2"
+            name="kondisi">Pernafasan
+        </label>
+
+        <label for="kondisi">
+            <input type="checkbox" id="kondisi-3"
+            name="kondisi">Penyakit jantung
+        </label>
+
+        <label for="kondisi">
+            <input type="checkbox" id="kondisi-4"
+            name="kondisi">Kejiwaan
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>Apakah anda memiliki alergi terhadap obat?</label>
+
+        <label for="rekomendasi">
+            <input type="radio" id="rekomendasi-1" 
+            name="rekomendasi">Ya</label>
+
+        <label for="rekomendasi">
+            <input type="radio" id="rekomendasi-2"
+            name="rekomendasi">Tidak</label>
+
+        <label for="rekomendasi">
+            <input type="radio" id="rekomendasi-3"
+            name="rekomendasi">Tidak yakin
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>Apa jenis kelamin anda?</label>
+
+        <label for="jeniskelamin">
+            <input type="radio" id="kondisi-1"
+             name="kondisi">Laki-laki</label>
+
+        <label for="jeniskelamin">
+            <input type="radio" id="kondisi-2"
+            name="kondisi">Perempuan
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>Status Perkawinan</label>
+
+        <label for="inp-1">
+        <input type="radio" name="inp">Kawin</label>
+
+        <label for="inp-3">
+        <input type="radio" name="inp">Dibawah Umur</label>
+
+        <label for="inp-4">
+        <input type="radio" name="inp">Belum Kawin</label>
+    </div>
+
+    <div class="form-control">
+        <label for="Seorang" id="label-seorang">
+           Apakah anda perokok atau memiliki riwayat pengguna tembakau?
+        </label>
+
+        <select name="perokok" id="perokok">
+            <option value="Ya">Ya</option>
+            <option value="Tidak">Tidak</option>
+        </select>
+    </div>
+
+    <div class="form-control">
+        <label for="Seorang" id="label-pecandu">
+           Apakah anda pecandu atau memiliki riwayat pengguna obat-obatan terlarang?
+        </label>
+
+        <select name="pecandu" id="pecandu">
+            <option value="Ya">Ya</option>
+            <option value="Tidak">Tidak</option>
+        </select>
+    </div>
+
+    <div class="form-control">
+        <label for="komentar">Riwayat Medis
+        </label>
+        <textarea name="komentar" id="komentar"
+        placeholder="Isi riwayat medis anda disini..."></textarea>
+    </div>
+
+    <button type="submit" value="submit">
+        simpan
+    </button>
+</form>
+</body>
+</html>
